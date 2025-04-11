@@ -34,8 +34,8 @@ A Flutter-based mobile app that aggregates news articles from the Kite API, allo
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ayolateef/News-Aggregator.git
-   cd News-Aggregator
+   git clone https://github.com/ayolateef/kagi_news_app_demo.git
+   cd kagi_news_app_demo
    ```
 
 3. **Install Dependencies**:
