@@ -37,6 +37,8 @@ dependencies:
 #  just_audio: ^0.9.46
   audioplayers: 5.2.0
   shared_preferences: ^2.5.3
+  video_player: ^2.9.5
+  youtube_player_flutter: ^9.1.1
 
   # firebase_core: ^2.24.2
   # firebase_auth: ^4.16.0

@@ -48,6 +48,11 @@ A Flutter-based mobile app that aggregates news articles from the Kite API, allo
    flutter run
    ```
     - Use a physical device for reliable TTS and audio streaming (emulators may lack audio support).
+      Testing the App
+
+5.  **TestFlight Link**: [Not uploaded to TestFlight yet; use AppBox link instead]
+- Download the `.ipa` from [AppBox](https://appbox.me/fgcodv31) and install it on your iOS device.
+
 
 ## Usage
 - **Home Screen**: Browse articles by category using the category selector.

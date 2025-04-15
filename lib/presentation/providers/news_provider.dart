@@ -52,7 +52,6 @@ class NewsProvider with ChangeNotifier {
     _setLoading(true);
     try {
       final response = await _apiService.fetchArticles(categoryFile);
-    //  _articles = response.clusters?.expand((cluster) => cluster.articles ?? []).toList() ?? [];
 
       _articles = response.clusters?.expand<Article>((cluster) => cluster.articles ?? []).toList() ?? [];
       _selectedCategoryFile = categoryFile;
@@ -100,7 +99,7 @@ class NewsProvider with ChangeNotifier {
     } else {
       _favorites.add(article);
     }
-    _saveFavorites(); // Persist changes
+    _saveFavorites();
     notifyListeners();
   }
 

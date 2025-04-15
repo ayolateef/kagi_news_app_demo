@@ -99,6 +99,46 @@ class Cluster {
   }
 }
 
+// class Article {
+//   final String title;
+//   final String link;
+//   final String domain;
+//   final String date;
+//   final String? image;
+//   final String? imageCaption;
+//
+//   Article({
+//     required this.title,
+//     required this.link,
+//     required this.domain,
+//     required this.date,
+//     this.image,
+//     this.imageCaption,
+//   });
+//
+//   factory Article.fromJson(Map<String, dynamic> json) {
+//     return Article(
+//       title: json['title'] ?? '',
+//       link: json['link'] ?? '',
+//       domain: json['domain'] ?? '',
+//       date: json['date'] ?? '',
+//       image: json['image'],
+//       imageCaption: json['image_caption'],
+//     );
+//   }
+//
+//   Map<String, dynamic> toJson() {
+//     return {
+//       'title': title,
+//       'link': link,
+//       'domain': domain,
+//       'date': date,
+//       'image': image,
+//       'image_caption': imageCaption,
+//     };
+//   }
+// }
+
 class Article {
   final String title;
   final String link;
@@ -106,6 +146,8 @@ class Article {
   final String date;
   final String? image;
   final String? imageCaption;
+  final String? videoUrl;  // New: for video news
+  final String source;     // New: to identify the source (Kite, The Guardian, etc.)
 
   Article({
     required this.title,
@@ -114,6 +156,8 @@ class Article {
     required this.date,
     this.image,
     this.imageCaption,
+    this.videoUrl,
+    required this.source,
   });
 
   factory Article.fromJson(Map<String, dynamic> json) {
@@ -124,6 +168,8 @@ class Article {
       date: json['date'] ?? '',
       image: json['image'],
       imageCaption: json['image_caption'],
+      videoUrl: json['videoUrl'],
+      source: json['source'] ?? 'Kite',
     );
   }
 
@@ -135,6 +181,8 @@ class Article {
       'date': date,
       'image': image,
       'image_caption': imageCaption,
+      'videoUrl': videoUrl,
+      'source': source,
     };
   }
 }
