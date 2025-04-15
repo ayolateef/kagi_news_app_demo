@@ -59,6 +59,15 @@ A Flutter-based mobile app that aggregates news articles from the Kite API, allo
 - **Favorites Screen**: Tap the heart icon on articles to save/remove them (persists across restarts).
 - **Explore Screen**: Placeholder for future features.
 - **Article Details**: Tap an article to view details in a bottom sheet with TTS and streaming options.
+## Screenshots
+The following screenshots are stored in the `screenshots/` folder of this repository:
+- Home Screen:
+  ![Home Screen](screenshots/home_screen_dark.png)(screenshots/home_screen_light.png)
+- News Details:
+  ![ex](screenshots/news_details.png)
+- Favorite Screen:
+  ![Favorite](screenshots/favorite_screen.png)
+
 
 ## Notes
 - **Kite API**: Provides article metadata (title, link, etc.) and clusters; full content is mocked.
